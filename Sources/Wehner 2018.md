@@ -9,4 +9,4 @@ Year: "2018"
 tags:
   - QuantumInternet
 ---
-[[2018 - Wehner - Quantum internet A vision for the road ahead.pdf|Quantum internet: A vision for the road ahead]]
+[[2018 - Wehner et al. - Quantum internet A vision for the road ahead.pdf|Quantum internet: A vision for the road ahead]]
