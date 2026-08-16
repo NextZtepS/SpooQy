@@ -21,17 +21,18 @@ This is an academic research vault for the **SpooQy quantum optics lab**. It is 
 ## 2. Directory Structure
 
 ```
-SpooQy/                          ← Vault root
-├── conventions.md               ← This file (LLM skill reference)
-├── <TopicNote>.md               ← Topic notes may live in root
-├── Notes/                       ← Or in the Notes/ folder
+SpooQy/
+├── conventions.md
+├── <TopicNote>.md
+├── Notes/
 │   └── <TopicNote>.md
-├── Sources/                     ← One file per paper
-│   └── <Author YYYY>.md         ← Naming: "Lohrmann 2019.md", "Steinlechner et al. 2014.md"
-├── Originals/                   ← PDFs organized by topic
-│   └── <Topic>/                 ← Sub-folder matches the topic tag (e.g. "SPDC")
-│       └── <YYYY Title>.pdf     ← Naming: year first, then full title
-└── .obsidian/                   ← Obsidian app config (do not edit manually)
+├── Sources/
+│   └── <Topic>/
+│       └── <Author YYYY>.md
+├── Originals/
+│   └── <Topic>/
+│       └── <YYYY - Author - Full Title>.pdf
+└── .obsidian/
 ```
 
 ---
@@ -43,8 +44,10 @@ Every paper referenced in the vault **must** have a corresponding file in `Sourc
 ### 3.1 Naming
 
 ```
-Sources/<First Author Lastname> <YYYY>.md
+Sources/<Topic>/<First Author Lastname> <YYYY>.md
 ```
+
+Where `<Topic>` is the exact folder name used in `Originals/` (e.g. `SPDC`, `Quantum Internet`, `Quantum Dots`, `EOM`).
 
 For papers with many authors, use `et al.`:
 ```
@@ -226,7 +229,7 @@ The standard citation flow is:
 ```
 Topic Note
   └─ [[Author YYYY]]
-        └─ Sources/Author YYYY.md          (has frontmatter metadata)
+        └─ Sources/Topic/Author YYYY.md    (has frontmatter metadata)
               └─ [[YYYY Title.pdf|Title]]
                     └─ Originals/Topic/YYYY Title.pdf
 ```
@@ -271,7 +274,7 @@ Defined in `.obsidian/types.json`. Do not deviate from these types:
 
 When **adding a new paper**:
 - [ ] Place PDF in `Originals/<Topic>/YYYY - Author - Full Title.pdf` (≤5 authors: lastname only; >5 authors: lastname + `et al.`)
-- [ ] Create `Sources/<Author YYYY>.md` with full frontmatter
+- [ ] Create `Sources/<Topic>/<Author YYYY>.md` with full frontmatter (topic subfolder must match the `Originals/` subfolder)
 - [ ] Ensure the wikilink in the Sources body **exactly matches** the PDF filename
 - [ ] Tag the Sources file with the topic folder name
 - [ ] Add `[[Author YYYY]]` citations in relevant topic Notes
