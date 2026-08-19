@@ -1,16 +1,16 @@
 #Source
 
-## Overview
+# Overview
 
 An entanglement source is a device that prepares a pair of photons in a [[bipartite entanglement|maximally entangled state]], most commonly a [[Bell state]]. The two dominant physical processes used to generate photon pairs are:
 
 - **[[SPDC]]** (Spontaneous Parametric Down Conversion) — the most mature and widely deployed technique, based on a second-order nonlinear ($\chi^{(2)}$) process in birefringent crystals such as [[ppKTP crystal|ppKTP]], BBO, and lithium niobate. See [[Anwar 2021]] for a comprehensive review of SPDC-based source designs.
-- **SFWM** (Spontaneous Four-Wave Mixing) — based on a third-order ($\chi^{(3)}$) process, commonly implemented in optical fibers or silicon waveguides. *To be studied later.*
-
-This note focuses primarily on **SPDC-based sources**.
+- **[[SFWM]]** (Spontaneous Four-Wave Mixing) — based on a third-order ($\chi^{(3)}$) process, commonly implemented in optical fibers or silicon waveguides. *To be studied later.*
+- **[[Quantum Dots]]** — based on the [[biexcitons]] cascade radiative decays. See [[Heindel 2023]] for detailed description.
 
 ---
 
+# [[SPDC]]
 ## Common Source Designs
 
 Many entanglement source geometries have been developed around the SPDC process, differing in how they create the two coherent paths needed to produce a superposition state. The most widely used designs include:
@@ -23,6 +23,8 @@ Many entanglement source geometries have been developed around the SPDC process,
 ---
 
 ## Linear Beam Displacement Interferometer
+
+![[2021 - Anwar - Entangled photon-pair sources based on three-wave mixing in bulk crystals.pdf#page=13&rect=46,128,284,187|2021 - Anwar - Entangled photon-pair sources based on three-wave mixing in bulk crystals, p.13]]
 
 ### Design Principle
 
@@ -68,8 +70,14 @@ The slight reduction in D/A visibility for the broadband pump is attributed to n
 A primary motivation of the design is to exploit the high output power available from free-running laser diodes (up to 1 W at 405 nm). The authors project that combining this source with **wavelength-multiplexed, high-speed single-photon detectors** could enable observation of **~10 billion entangled pairs per second** in a single spatial mode [[Lohrmann 2019]] [[2019 - Lohrmann - Broadband pumped polarization entangled photon-pair source in a linear beam displacement interferometer.pdf#page=4|page 4]].
 
 ---
+# [[SFWM]]
 
-## See Also
+---
+
+# [[Quantum Dots]]
+
+---
+# See Also
 
 - [[SPDC]] — the underlying photon-pair generation process
 - [[ppKTP crystal]] — the nonlinear crystal used in this source

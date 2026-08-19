@@ -1,0 +1,55 @@
+> [!note] Definition
+> Quantum dots in a semi-conductor engineered to act like a two-level system that emits light.
+
+Two-level system is advantageous such that the [[single-photon purity]] is decoupled from the brightness of the source [[Senellart 2017]] [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf#page=4&selection=161,30,166,35&color=yellow|p.1029]].
+
+## Single-photon source
+
+QDs can be used as quantum emitters which acts more like an on-demand (push-of-a-button) single-photon source using its radiative recombination of an electron and hole. In addition, entanglement can be achieved via [[biexcitons]] involving 2 elections and 2 holes [[Heindel 2023]] [[2023 - Heindel - Quantum dots for photonic quantum information technology.pdf#page=5&selection=0,1,21,94&color=yellow|p.5]].
+
+## Requirement Parameters as a quantum emitter
+
+The following parameters define the quality of a QD as a quantum emitter collected from [[Heindel 2023]] [[Senellart 2017]] [[Portalupi 2017]] with Claude Sonnet 4.6.
+
+| Parameter                                              | Physical meaning                                                                                                                                                                                                                                                                       | How determined                                                              | How improved                                                                                                                                                                                                                                               |
+| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [[Single-photon purity]] $g^{(2)}(0)$                  | Suppression of multi-photon emission; $g^{(2)}(0)=0$ ideal, $=1$ for CW laser [[Senellart 2017]] [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf#page=1\|page 1]]                                                                            | [[Hanbery Brown and Twiss]] (HBT)                                           | Resonant excitation; charge-tunable diodes to suppress blinking [[Heindel 2023]] [[2023 - Heindel - Quantum dots for photonic quantum information technology.pdf#page=13\|page 13]]                                                                        |
+| Indistinguishability $M$                               | Mean wavepacket overlap; $M=1$ perfectly identical. $M = \gamma_{sp}/(\gamma_{sp}+2\gamma^*)$ [[Portalupi 2017]] [[2017 - Portalupi - Resonantly Excited Quantum Dots: Superior Non-classical Light Sources for Quantum Information.pdf#page=95\|page 95]]                             | [[Hong-Ou-Mandel]] (HOM); $M = V_\text{HOM}$ at 50:50 BS                    | Resonant excitation; Purcell enhancement of $\gamma_{sp}$; sub-Kelvin operation [[Senellart 2017]] [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf#page=1\|page 1]]                                              |
+| Brightness $\mathcal{B}$                               | Prob. a trigger pulse yields a usable photon; $\mathcal{B}=p(1)$; scales as $\mathcal{B}^n$ for $n$-photon protocols [[Senellart 2017]] [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf#page=2\|page 2]]                                     | Detected count rate per pulse, corrected for losses and detector efficiency | Photonic structures (micropillar, nanowire, microlens); Purcell $\beta$-factor; deterministic QD-cavity positioning [[Heindel 2023]] [[2023 - Heindel - Quantum dots for photonic quantum information technology.pdf#page=13\|page 13]]                    |
+| Emission wavelength $\lambda$                          | Must match application: 780 nm (Rb memory), 1.3 µm (telecom O-band), 1.55 µm (telecom C-band); InGaAs QDs emit at 900–950 nm [[Heindel 2023]] [[2023 - Heindel - Quantum dots for photonic quantum information technology.pdf#page=12\|page 12]]                                       | Photoluminescence spectroscopy                                              | Material/strain engineering; quantum frequency conversion [[Senellart 2017]] [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf#page=11\|page 11]]                                                                  |
+| Fine-structure splitting $E_\text{FSS}$                | Energy gap between bright exciton states from asymmetric confinement; $E_\text{FSS}\approx0$ needed for polarisation-entangled pairs; typical 10–100 µeV [[Heindel 2023]] [[2023 - Heindel - Quantum dots for photonic quantum information technology.pdf#page=13\|page 13]]           | Polarisation-resolved spectroscopy                                          | Strain/field tuning; annealing; droplet epitaxy growth                                                                                                                                                                                                     |
+| Entanglement fidelity $F$                              | Overlap with ideal Bell state from biexciton cascade; $F=1$ perfect                                                                                                                                                                                                                    | Two-photon quantum state tomography; CHSH inequality                        | Reduce $E_\text{FSS}$; resonant two-photon biexciton excitation; Purcell-accelerated emission [[Portalupi 2017]] [[2017 - Portalupi - Resonantly Excited Quantum Dots: Superior Non-classical Light Sources for Quantum Information.pdf#page=95\|page 95]] |
+| Quantum efficiency $\eta_\text{prep},\,\eta_\text{em}$ | $\eta_\text{prep}$: prob. to initialise desired state (blinking, phonons). $\eta_\text{em}$: photon prob. per recombination (non-radiative loss, phonon sidebands) [[Heindel 2023]] [[2023 - Heindel - Quantum dots for photonic quantum information technology.pdf#page=13\|page 13]] | Corrected count rate vs. excitation rate                                    | Charge-tunable diodes; resonant excitation; Purcell enhancement                                                                                                                                                                                            |
+| Spin coherence time $T_2^*$                            | Phase coherence time of confined spin qubit; governs spin-photon interface fidelity [[Heindel 2023]] [[2023 - Heindel - Quantum dots for photonic quantum information technology.pdf#page=13\|page 13]]                                                                                | Ramsey interferometry; spin-echo sequences                                  | Dynamical decoupling; nuclear spin narrowing; charge noise reduction                                                                                                                                                                                       |
+
+## Radiation
+
+For non-resonant excitation, there are two steps involved in the radiation of quantum dots $\ket{XX} \rightarrow \ket{X}$ and $\ket{X} \rightarrow \ket{0}$. The photons emitted from the two steps have slightly different wavelengths which can be filtered to act like a single-photon source [[Senellart 2017]] [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf#page=5&selection=64,63,103,46&color=yellow|p.1030]].
+
+Resonant excitation could yield better indistinguishability but is more challenging [[Senellart 2017]] [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf#page=5&selection=113,5,129,1&color=yellow|p.1030]].
+
+Currently, QDs produce photon at 900-970 nm which is longer than the wavelengths compatible with atomic-based devices and free-space; but shorter than telecom [[Heindel 2023]] [[2023 - Heindel - Quantum dots for photonic quantum information technology.pdf#page=12&selection=47,2,80,30&color=red|p.12]]. There are 2 approaches to this: 1. make/tune new QDs at different $\lambda$ or 2. frequency convert a good photon to other desirable wavelengths [[Senellart 2017]] [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf#page=11&selection=291,0,360,1&color=important|p.1036]].
+
+![[2023 - Heindel - Quantum dots for photonic quantum information technology.pdf#page=15&rect=97,451,511,717&color=red|2023 - Heindel - Quantum dots for photonic quantum information technology, p.15]]
+
+
+## Entanglement
+
+Quantum Dots can also produce polarization entangled photon-pair during the radiative decay from two possible $\ket{X}$ states which is ideally degenerate, but anisotropic (direction-dependent) exhange can make the photon-pair less degnerate [[Senellart 2017]] [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf#page=5&selection=195,0,233,8&color=yellow|p.1030]].
+
+See section for Quantum Dots based device in [[Entanglement Sources]] .
+
+
+## Performance
+
+
+> [!PDF|yellow] [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf#page=9&selection=174,28,203,2&color=yellow|p.1034]]
+> > To date, there have been only a few results addressing the fibered brightness. A high single-photon purity—$g^{(2)}(0) ≈ 0.028$—was demonstrated for $B_{SMF} = 0.14$, yielding more than $3.6×10^6$ counts per second on a silicon avalanche photon detector, and corresponding to ~$10^7$ photons per second from a 82 MHz excitation rate. 
+> 
+
+
+> [!PDF|yellow] [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf#page=11&selection=163,0,178,1&color=yellow|p.1036]]
+> > When indistinguishable single photons are required, SPDC sources provide heralded single photons with a high degree of indistinguishability, but at the cost of a brightness limited to typically 2% (Fig. 1b,c). QD devices can now deliver single-photon sources with near unity indistinguishability, high single-photon purity — $g^{(2)}(0) < 2\%$—and a brightness in the 15–30% range.
+> > 
+> > The brightness measured with single mode fibre is comparable to SPDC based source. We should look further into the [[single-photon purity]] comparison.
+

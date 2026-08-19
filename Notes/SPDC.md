@@ -5,6 +5,7 @@
 > [!note] Definition
 > SPDC stands for Spontaneous Parametric Down Conversion which is also commonly known as three wave-mixing process including pump, signal, and idler. It is a popular technique used to create a [[ bipartite entanglement]] for various quantum applications.
 
+![[2021 - Anwar - Entangled photon-pair sources based on three-wave mixing in bulk crystals.pdf#page=3&rect=300,94,557,236|2021 - Anwar - Entangled photon-pair sources based on three-wave mixing in bulk crystals, p.3]]
 ## Types of SPDC
 
 There are 3 types of SPDC in total which is categorized by the relationship between the polarization of the pump, signal and idler photons.
@@ -23,8 +24,12 @@ There are 3 types of SPDC in total which is categorized by the relationship betw
   The narrow bandwidth and spectral stability make Type-II the preferred configuration for most quantum communication and entanglement applications where spectral control is important. Heralding efficiencies for Type-II in a Sagnac configuration have been demonstrated at $\eta_s \approx 0.45$, $\eta_i \approx 0.39$ without correction for detector inefficiency [[Steinlechner et al. 2014]] [[2014 - Steinlechner et al. - Efficient heralding of polarization-entangled photons from type 0 and type II SPDC in PPKTP.pdf#page=4|page 4]].
 
 
-## Entanglement Sources
+## [[Entanglement Sources]]
 
 SPDC is the most widely used physical process for generating polarization-entangled photon pairs. Various optical configurations have been developed around it to prepare photon pairs in maximally entangled [[Bell state|Bell states]], as reviewed in [[Anwar 2021]].
 
+SPDC-based source works well at room temperature for entanglement generation but still faces statistical fluctuation which makes it act less like on-demand single photon source without complex heralding [[Heindel 2023]] [[2023 - Heindel - Quantum dots for photonic quantum information technology.pdf#page=4&selection=145,39,163,53&color=yellow|p.4]]. 
+
 For a detailed treatment of source architectures — including the **linear beam displacement interferometer** used by the SpooQy group — see [[Entanglement Sources]].
+
+[[SPDC]] source doesn't scale well with increasing brightness requirement. The quanlity of the generated photons degrate quickly as the pump power increases [[Senellart 2017]] [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf#page=4&selection=39,0,92,1&color=red|p.1029]].
