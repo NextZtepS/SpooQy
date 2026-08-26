@@ -9,3 +9,5 @@ tags:
   - QuantumDots
 ---
 [[2017 - Portalupi - Resonantly Excited Quantum Dots: Superior Non-classical Light Sources for Quantum Information.pdf|Resonantly Excited Quantum Dots: Superior Non-classical Light Sources for Quantum Information]]
+
+Chapter 3 is a good starting point.

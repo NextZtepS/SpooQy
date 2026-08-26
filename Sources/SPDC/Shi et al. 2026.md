@@ -16,7 +16,7 @@ Authors:
   - "[[Sihao Wang]]"
   - "[[Alexander Ling]]"
   - "[[Di Zhu]]"
-Publication: "[[arXiv]]"
+Publication: "[[Nature]]"
 Title: Integrated polarization-entangled photon source for wavelength-multiplexed quantum networks
 Year: "2026"
 tags:

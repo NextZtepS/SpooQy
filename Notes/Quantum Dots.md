@@ -40,13 +40,14 @@ Quantum Dots can also produce polarization entangled photon-pair during the radi
 See section for Quantum Dots based device in [[Entanglement Sources]] .
 
 
-## Performance
+## [[Quantum Memory]]
 
-
-> [!PDF|yellow] [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf#page=9&selection=174,28,203,2&color=yellow|p.1034]]
-> > To date, there have been only a few results addressing the fibered brightness. A high single-photon purity—$g^{(2)}(0) ≈ 0.028$—was demonstrated for $B_{SMF} = 0.14$, yielding more than $3.6×10^6$ counts per second on a silicon avalanche photon detector, and corresponding to ~$10^7$ photons per second from a 82 MHz excitation rate. 
+> [!PDF|important] [[2017 - Portalupi - Resonantly Excited Quantum Dots: Superior Non-classical Light Sources for Quantum Information.pdf#page=370&selection=13,26,18,45&color=important|2017 - Portalupi - Resonantly Excited Quantum Dots: Superior Non-classical Light Sources for Quantum Information, p.359]]
+> > we introduce a recent work that reports a coherent spinphoton quantum switch operating at the fundamental quantum limit, where a single photon flips the orientation of a quantum dot spin and the spin flips the polarization of the photon. These strong spin-photon interactions open up a promising direction for solid-state implementations of high-speed quantum networks and on-chip quantum photonic circuits using nanophotonic devices.
 > 
+> I want to look more into how QDs spin-photon interface can be used to store quantum information.
 
+## Performance
 
 > [!PDF|yellow] [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf#page=11&selection=163,0,178,1&color=yellow|p.1036]]
 > > When indistinguishable single photons are required, SPDC sources provide heralded single photons with a high degree of indistinguishability, but at the cost of a brightness limited to typically 2% (Fig. 1b,c). QD devices can now deliver single-photon sources with near unity indistinguishability, high single-photon purity — $g^{(2)}(0) < 2\%$—and a brightness in the 15–30% range.
