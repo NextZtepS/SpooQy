@@ -5,7 +5,7 @@
 An entanglement source is a device that prepares a pair of photons in a [[bipartite entanglement|maximally entangled state]], most commonly a [[Bell state]]. The two dominant physical processes used to generate photon pairs are:
 
 - **[[SPDC]]** (Spontaneous Parametric Down Conversion) — the most mature and widely deployed technique, based on a second-order nonlinear ($\chi^{(2)}$) process in birefringent crystals such as [[ppKTP crystal|ppKTP]], BBO, and lithium niobate. See [[Anwar 2021]] for a comprehensive review of SPDC-based source designs.
-- **[[SFWM]]** (Spontaneous Four-Wave Mixing) — based on a third-order ($\chi^{(3)}$) process, commonly implemented in optical fibers or silicon waveguides. *To be studied later.*
+- **[[SFWM]]** (Spontaneous Four-Wave Mixing) — based on a third-order ($\chi^{(3)}$) process, commonly implemented in optical fibers or silicon waveguides.
 - **[[Quantum Dots]]** — based on the [[biexcitons]] cascade radiative decays. See [[Heindel 2023]] for detailed description.
 
 ---

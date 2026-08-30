@@ -3,7 +3,7 @@
 ## Definition
 
 > [!note] Definition
-> SPDC stands for Spontaneous Parametric Down Conversion which is also commonly known as three wave-mixing process including pump, signal, and idler. It is a popular technique used to create a [[ bipartite entanglement]] for various quantum applications.
+> SPDC stands for Spontaneous Parametric Down Conversion which is also commonly known as three wave-mixing process including pump, signal, and idler. It is a popular technique used to create a [[ bipartite entanglement]] for various quantum applications. SPDC is also known by another name called [[parametric fluorescence]].
 
 ![[2021 - Anwar - Entangled photon-pair sources based on three-wave mixing in bulk crystals.pdf#page=3&rect=300,94,557,236|2021 - Anwar - Entangled photon-pair sources based on three-wave mixing in bulk crystals, p.3]]
 ## Types of SPDC

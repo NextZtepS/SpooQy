@@ -13,6 +13,7 @@ Title: Generation of photon pairs through spontaneous four-wave mixing in thin n
 Year: "2025"
 tags:
   - SFWM
+  - Source
 ---
 [[2025 - Son et al. - Generation of photon pairs through spontaneous four-wave mixing in thin nonlinear layers.pdf|Generation of photon pairs through spontaneous four-wave mixing in thin nonlinear layers]]
 
