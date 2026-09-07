@@ -6,6 +6,8 @@
 > SPDC stands for Spontaneous Parametric Down Conversion which is also commonly known as three wave-mixing process including pump, signal, and idler. It is a popular technique used to create a [[ bipartite entanglement]] for various quantum applications. SPDC is also known by another name called [[parametric fluorescence]].
 
 ![[2021 - Anwar - Entangled photon-pair sources based on three-wave mixing in bulk crystals.pdf#page=3&rect=300,94,557,236|2021 - Anwar - Entangled photon-pair sources based on three-wave mixing in bulk crystals, p.3]]
+
+---
 ## Types of SPDC
 
 There are 3 types of SPDC in total which is categorized by the relationship between the polarization of the pump, signal and idler photons.
@@ -23,7 +25,12 @@ There are 3 types of SPDC in total which is categorized by the relationship betw
 
   The narrow bandwidth and spectral stability make Type-II the preferred configuration for most quantum communication and entanglement applications where spectral control is important. Heralding efficiencies for Type-II in a Sagnac configuration have been demonstrated at $\eta_s \approx 0.45$, $\eta_i \approx 0.39$ without correction for detector inefficiency [[Steinlechner et al. 2014]] [[2014 - Steinlechner et al. - Efficient heralding of polarization-entangled photons from type 0 and type II SPDC in PPKTP.pdf#page=4|page 4]].
 
+---
+## [[Phase Matching]]
 
+Phase matching determines the actual wavelength and type of the SPDC possible in a specific crystal.
+
+---
 ## [[Entanglement Sources]]
 
 SPDC is the most widely used physical process for generating polarization-entangled photon pairs. Various optical configurations have been developed around it to prepare photon pairs in maximally entangled [[Bell state|Bell states]], as reviewed in [[Anwar 2021]].
