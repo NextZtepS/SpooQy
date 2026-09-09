@@ -8,7 +8,7 @@ Title: High-performance semiconductor quantum-dot single-photon sources
 Year: "2017"
 tags:
   - QuantumDots
-  - Source
+  - PhotonSource
 ---
 [[2017 - Senellart - High-performance semiconductor quantum-dot single-photon sources.pdf|High-performance semiconductor quantum-dot single-photon sources]]
 

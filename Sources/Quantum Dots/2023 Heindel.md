@@ -11,7 +11,7 @@ Year: "2023"
 tags:
   - QuantumDots
   - QuantumInternet
-  - Source
+  - IntegratedPhotonics
 ---
 [[2023 - Heindel - Quantum dots for photonic quantum information technology.pdf|Quantum dots for photonic quantum information technology]]
 

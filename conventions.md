@@ -44,14 +44,14 @@ Every paper referenced in the vault **must** have a corresponding file in `Sourc
 ### 3.1 Naming
 
 ```
-Sources/<Topic>/<First Author Lastname> <YYYY>.md
+Sources/<Topic>/<YYYY> <First Author Lastname>.md
 ```
 
 Where `<Topic>` is the exact folder name used in `Originals/` (e.g. `SPDC`, `Quantum Internet`, `Quantum Dots`, `EOM`).
 
 For papers with many authors, use `et al.`:
 ```
-Sources/Steinlechner et al. 2014.md
+Sources/SPDC/2014 Steinlechner et al..md
 ```
 
 ### 3.2 Template
@@ -191,7 +191,7 @@ $$
 
 | Pattern | Syntax | Use case |
 |---|---|---|
-| Link to a Source | `[[Lohrmann 2019]]` | Cite a paper |
+| Link to a Source | `[[2019 Lohrmann]]` | Cite a paper |
 | Link to a concept Note | `[[ppKTP crystal]]` | Reference another topic |
 | Deep-link to PDF page (page only) | `[[filename.pdf#page=N\|label]]` | LLM-safe citation |
 | Deep-link to PDF page + selection | `[[filename.pdf#page=N&selection=S,s,E,e\|label]]` | Precise in-text citation (human-generated) |
@@ -228,8 +228,8 @@ The standard citation flow is:
 
 ```
 Topic Note
-  └─ [[Author YYYY]]
-        └─ Sources/Topic/Author YYYY.md    (has frontmatter metadata)
+  └─ [[YYYY Author]]
+        └─ Sources/Topic/YYYY Author.md    (has frontmatter metadata)
               └─ [[YYYY Title.pdf|Title]]
                     └─ Originals/Topic/YYYY Title.pdf
 ```
@@ -243,7 +243,7 @@ Topic Note
 
 Both patterns can coexist in the same sentence:
 ```markdown
-...as shown in [[Steinlechner et al. 2014]] [[2014 Efficient heralding...pdf#page=2&selection=151,41,194,10|page 2]].
+...as shown in [[2014 Steinlechner et al.]] [[2014 Efficient heralding...pdf#page=2&selection=151,41,194,10|page 2]].
 ```
 
 ---
@@ -274,16 +274,16 @@ Defined in `.obsidian/types.json`. Do not deviate from these types:
 
 When **adding a new paper**:
 - [ ] Place PDF in `Originals/<Topic>/YYYY - Author - Full Title.pdf` (≤5 authors: lastname only; >5 authors: lastname + `et al.`)
-- [ ] Create `Sources/<Topic>/<Author YYYY>.md` with full frontmatter (topic subfolder must match the `Originals/` subfolder)
+- [ ] Create `Sources/<Topic>/<YYYY> <Author>.md` with full frontmatter (topic subfolder must match the `Originals/` subfolder)
 - [ ] Ensure the wikilink in the Sources body **exactly matches** the PDF filename
 - [ ] Tag the Sources file with the topic folder name
-- [ ] Add `[[Author YYYY]]` citations in relevant topic Notes
+- [ ] Add `[[YYYY Author]]` citations in relevant topic Notes
 
 When **creating a new topic Note**:
 - [ ] Use `#ConceptName` as the H1 heading (no space after `#`)
 - [ ] Use `> [!note]` callout for definitions
 - [ ] Wrap concept names in `[[wikilinks]]` even if the note doesn't exist yet (ghost links are fine — they encourage future note creation)
-- [ ] Cite papers using `[[Author YYYY]]` and optionally add a PDF deep-link immediately after
+- [ ] Cite papers using `[[YYYY Author]]` and optionally add a PDF deep-link immediately after
 
 When **creating a new topic folder** in `Originals/`:
 - [ ] Use a short, capitalized topic name (e.g., `SPDC`, `Entanglement`, `Tomography`)

@@ -13,6 +13,7 @@ Title: Four-wave mixing in silicon wire waveguides
 Year: "2005"
 tags:
   - SFWM
+  - PhotonSource
 ---
 [[2005 - Fukuda et al. - Four-wave mixing in silicon wire waveguides.pdf|Four-wave mixing in silicon wire waveguides]]
 

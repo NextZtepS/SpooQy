@@ -13,7 +13,7 @@ Title: Generation of photon pairs through spontaneous four-wave mixing in thin n
 Year: "2025"
 tags:
   - SFWM
-  - Source
+  - EntanglementSource
 ---
 [[2025 - Son et al. - Generation of photon pairs through spontaneous four-wave mixing in thin nonlinear layers.pdf|Generation of photon pairs through spontaneous four-wave mixing in thin nonlinear layers]]
 
@@ -34,7 +34,7 @@ The generated photons are dominated by photoluminescence rather than [[SFWM]] th
 
 ![[2025 - Son et al. - Generation of photon pairs through spontaneous four-wave mixing in thin nonlinear layers.pdf#page=4&rect=140,392,476,701|p.4]] 
 
-### Lithium Niobate
+### [[Lithium Niobate (LN)]] (LiNbO3)
 
 They claim that the signal (700 nm) is due to [[SFWM]] because it quadratic with the pump power which make sense [[2025 - Son et al. - Generation of photon pairs through spontaneous four-wave mixing in thin nonlinear layers.pdf#page=6&selection=61,92,63,51&color=yellow|p.6]].
 

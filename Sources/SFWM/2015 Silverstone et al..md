@@ -12,7 +12,7 @@ Title: Qubit entanglement between ring-resonator photon-pair sources on a silico
 Year: "2015"
 tags:
   - SFWM
-  - Source
+  - EntanglementSource
 ---
 [[2015 - Silverstone et al. - Qubit entanglement between ring-resonator photon-pair sources on a silicon chip.pdf|Qubit entanglement between ring-resonator photon-pair sources on a silicon chip]]
 
