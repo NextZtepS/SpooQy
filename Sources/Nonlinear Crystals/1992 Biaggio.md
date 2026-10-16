@@ -9,7 +9,7 @@ Publication: "[[Journal of the Optical Society of America B]]"
 Title: Refractive indices of orthorhombic KNbO3. II. Phase-matching configurations for nonlinear-optical interactions
 Year: "1992"
 tags:
-  - NonlinearCrystal
+  - NonlinearCrystals
   - KNO
 ---
 [[1992 - Biaggio - Refractive indices of orthorhombic KNbO3 II Phase-matching configurations for nonlinear-optical interactions.pdf|Refractive indices of orthorhombic KNbO3. II. Phase-matching configurations for nonlinear-optical interactions]]

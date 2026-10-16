@@ -5,6 +5,8 @@ The momentum conservation is a bit more tricky as it involes propagation directi
 $$ \vec{k_p} = \vec{k_s} + \vec{k_i}$$
 If the all the $\vec{k}$'s are pointing in the same direction, it is said to be **collinear** and generally preferred as it simplifies the collection of signal and idler photons.
 
+Phase matching conditions can be engineered to produce the photon pairs at desired wavelengths over a large range [[2019 Paudel et al.]] [[2019 - Paudel et al. - Direct excitation of a single quantum dot with cavity-SPDC photons.pdf#page=2&selection=10,63,31,92&color=important|p.2]]
+
 There are 3 types of phase matching techniques possible:
 
 ## Critial Phase Matching ([[CPM]])

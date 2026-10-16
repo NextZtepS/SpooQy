@@ -75,7 +75,7 @@ tags:
 - **Authors**: Each author is a `[[wikilink]]` so that author pages can be created and linked in the graph.
 - **Publication**: The journal or conference is also a `[[wikilink]]`.
 - **Year**: Stored as a `text` string (quoted), not a number — per `types.json` config.
-- **Tags**: Use the topic sub-folder name from `Originals/` as the tag (e.g., `SPDC`).
+- **Tags**: Concept links, not a folder label — see [§3.5](#35-tagging). Assigned by the vault owner; an assistant adds only tags already in the registry.
 - **Body**: A single wikilink to the PDF file in `Originals/`, using a pipe `|` alias for the human-readable title. The PDF filename must match exactly.
 
 ### 3.4 Example
@@ -95,6 +95,47 @@ tags:
 ---
 [[2019 Broadband pumped polarization entangled photon-pair source in a linear beam displacement interferometer.pdf|Broadband pumped polarization entangled photon-pair source in a linear beam displacement interferometer]]
 ```
+
+
+### 3.5 Tagging
+
+Tags are the **concept layer**: they answer *"what ideas does this paper touch?"*, which is a different question from *"which folder does the PDF live in?"*. A paper's folder is a single filing location; its tags are many, and they cut across folders.
+
+**The tag vocabulary is owned by the vault owner.** Tags are assigned by hand to wire papers to concepts, and most of them correspond to a topic note in `Notes/`.
+
+Rules:
+
+- A tag is **not** required to match the paper's `Originals/` sub-folder. A paper in `Light-Matter Interactions/` may carry no `LightMatter` tag at all if other concepts describe it better.
+- **CamelCase, no spaces** — Obsidian does not permit spaces in tags (`QuantumDots`, not `Quantum Dots`).
+- **Singular or plural, pick one and keep it.** `NonlinearCrystal` and `NonlinearCrystals` are two different tags to Obsidian and silently split the graph.
+- Prefer an **existing tag** from the registry below to a new near-synonym. Add a genuinely new tag only when a genuinely new concept appears.
+- **For an assistant**: apply only tags already in the registry. Never invent one, never infer a tag from the folder name. If a paper seems to need a concept that is not registered, leave it untagged and say so — the owner decides.
+
+#### Tag Registry
+
+Current vocabulary. `Note` is the topic note the tag links papers to (— = no note yet).
+
+| Tag | Meaning | Note |
+|---|---|---|
+| `SPDC` | Spontaneous parametric down-conversion | `SPDC` |
+| `SFWM` | Spontaneous four-wave mixing | `SFWM` |
+| `EntanglementSource` | Source producing entangled pairs | `Entanglement Sources` |
+| `PhotonSource` | Single-photon source | — |
+| `LightMatter` | Light–matter interaction / hybrid interfaces | — |
+| `QuantumDots` | Semiconductor quantum dots | `Quantum Dots` |
+| `QuantumInternet` | Networks, repeaters, distribution | `Quantum Internet` |
+| `OpticalCavity` | Cavities, resonators, Purcell engineering | `Optical Cavities` |
+| `IntegratedPhotonics` | Waveguide / on-chip platforms | — |
+| `EOM` | Electro-optic modulation, time lenses | — |
+| `NonlinearCrystals` | Bulk nonlinear crystal materials | — |
+| `KTP` / `KTA` / `KNO` | Specific crystals | `Potassium Titanyl Phosphate (KTP)`, —, `Potassium Niobate (KNO)` |
+| `QPM` | Quasi-phase matching (periodic poling) | `Phase Matching` |
+| `NCPM` | Non-critical phase matching | `Phase Matching` |
+| `HOM` | Hong–Ou–Mandel interference | `Hong-Ou-Mandel (HOM)` |
+| `HBT` | Hanbury Brown–Twiss / g2 measurement | `Hanbery Brown and Twiss (HBT)` |
+| `Pulsed` / `CW` | Excitation or pump regime | — |
+| `Bandwidth` | Spectral bandwidth / indistinguishability matching | — |
+| `Topological` | Topological photonics | — |
 
 ---
 
@@ -258,7 +299,7 @@ Defined in `.obsidian/types.json`. Do not deviate from these types:
 | `Publication` | `multitext` | Single `"[[wikilink]]"` string |
 | `Title` | `text` | Plain string, no wikilink |
 | `Year` | `text` | Quoted string e.g. `"2019"` |
-| `tags` | `tags` | Unquoted list items. **No spaces allowed** — use CamelCase for multi-word topics (e.g., `QuantumInternet` not `Quantum Internet`) |
+| `tags` | `tags` | Unquoted list items. **No spaces allowed** — use CamelCase for multi-word concepts (e.g., `QuantumInternet` not `Quantum Internet`). Draw from the registry in [§3.5](#35-tagging) |
 
 ---
 
@@ -276,7 +317,7 @@ When **adding a new paper**:
 - [ ] Place PDF in `Originals/<Topic>/YYYY - Author - Full Title.pdf` (≤5 authors: lastname only; >5 authors: lastname + `et al.`)
 - [ ] Create `Sources/<Topic>/<YYYY> <Author>.md` with full frontmatter (topic subfolder must match the `Originals/` subfolder)
 - [ ] Ensure the wikilink in the Sources body **exactly matches** the PDF filename
-- [ ] Tag the Sources file with the topic folder name
+- [ ] Tag the Sources file with concepts from the [§3.5](#35-tagging) registry — **not** automatically the folder name; leave tagging to the vault owner when unsure
 - [ ] Add `[[YYYY Author]]` citations in relevant topic Notes
 
 When **creating a new topic Note**:
@@ -287,5 +328,5 @@ When **creating a new topic Note**:
 
 When **creating a new topic folder** in `Originals/`:
 - [ ] Use a short, capitalized topic name (e.g., `SPDC`, `Entanglement`, `Tomography`)
-- [ ] Multi-word folder names must be written in **CamelCase** as the tag (e.g., folder `Quantum Internet` → tag `QuantumInternet`) — Obsidian does not support spaces in tags
-- [ ] Use that exact CamelCase tag value in all Sources files for papers in that folder
+- [ ] Create the matching sub-folder in `Sources/` — the two trees mirror each other
+- [ ] A new folder does **not** imply a new tag. Folders file PDFs; tags link concepts ([§3.5](#35-tagging)). Add a tag only if the topic is a concept you want to link papers by

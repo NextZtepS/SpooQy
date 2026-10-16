@@ -8,7 +8,7 @@ Publication: "[[Applied Physics B]]"
 Title: "KTiOPO4, KTiOAsO4, and KNbO3 crystals for mid-infrared femtosecond optical parametric amplifiers: analysis and comparison"
 Year: "2000"
 tags:
-  - NonlinearCrystal
+  - NonlinearCrystals
   - KTP
   - KTA
   - KNO
