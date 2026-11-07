@@ -121,6 +121,7 @@ Current vocabulary. `Note` is the topic note the tag links papers to (— = no n
 | `SFWM` | Spontaneous four-wave mixing | `SFWM` |
 | `EntanglementSource` | Source producing entangled pairs | `Entanglement Sources` |
 | `PhotonSource` | Single-photon source | — |
+| `PhotonBlockade` | Photon blockade — one photon suppressing the next | `Photon Blockade` |
 | `LightMatter` | Light–matter interaction / hybrid interfaces | — |
 | `QuantumDots` | Semiconductor quantum dots | `Quantum Dots` |
 | `QuantumInternet` | Networks, repeaters, distribution | `Quantum Internet` |
