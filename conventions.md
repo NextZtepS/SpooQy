@@ -54,6 +54,20 @@ For papers with many authors, use `et al.`:
 Sources/SPDC/2014 Steinlechner et al..md
 ```
 
+#### 3.1.1 Duplicate first author
+
+Source filenames must be unique **across the whole vault** (not just within a topic folder), because Obsidian resolves `[[YYYY Author]]` by filename alone. If `<YYYY> <First Author>` collides with an existing Source, add the **second author's last name** after the first author's to tell the papers apart:
+```
+Sources/<Topic>/<YYYY> <First Author> <Second Author>[ et al.].md
+```
+Example: `Sources/Tomography/2026 Wang et al..md` already exists, so the 2026 SPDC paper by Xiaojie Wang, Lin Zhou, … becomes:
+```
+Sources/SPDC/2026 Wang Zhou et al..md
+```
+- Only the new Source is renamed. The existing one keeps its name, so its links don't break.
+- The `et al.` suffix still follows the author-count rule.
+- This applies only to the `Sources/` filename. The `Originals/` PDF name stays `YYYY - Author - Title`, because the title already makes it unique.
+
 ### 3.2 Template
 
 ```markdown
@@ -125,6 +139,7 @@ Current vocabulary. `Note` is the topic note the tag links papers to (— = no n
 | `LightMatter` | Light–matter interaction / hybrid interfaces | — |
 | `QuantumDots` | Semiconductor quantum dots | `Quantum Dots` |
 | `QuantumInternet` | Networks, repeaters, distribution | `Quantum Internet` |
+| `QPV` | Quantum position verification / position-based quantum cryptography | — |
 | `OpticalCavity` | Cavities, resonators, Purcell engineering | `Optical Cavities` |
 | `IntegratedPhotonics` | Waveguide / on-chip platforms | — |
 | `EOM` | Electro-optic modulation, time lenses | — |
@@ -136,6 +151,7 @@ Current vocabulary. `Note` is the topic note the tag links papers to (— = no n
 | `HBT` | Hanbury Brown–Twiss / g2 measurement | `Hanbery Brown and Twiss (HBT)` |
 | `Pulsed` / `CW` | Excitation or pump regime | — |
 | `Bandwidth` | Spectral bandwidth / indistinguishability matching | — |
+| `SpectralPurity` | Spectral purity of heralded photons; spectrally separable (factorable) pairs | — (ghost link `Spectral Purity`) |
 | `Topological` | Topological photonics | — |
 
 ---
@@ -316,7 +332,7 @@ Defined in `.obsidian/types.json`. Do not deviate from these types:
 
 When **adding a new paper**:
 - [ ] Place PDF in `Originals/<Topic>/YYYY - Author - Full Title.pdf` (≤5 authors: lastname only; >5 authors: lastname + `et al.`)
-- [ ] Create `Sources/<Topic>/<YYYY> <Author>.md` with full frontmatter (topic subfolder must match the `Originals/` subfolder)
+- [ ] Create `Sources/<Topic>/<YYYY> <Author>.md` with full frontmatter (topic subfolder must match the `Originals/` subfolder). Check the name is unique vault-wide; if not, add the second author's last name ([§3.1.1](#311-duplicate-first-author))
 - [ ] Ensure the wikilink in the Sources body **exactly matches** the PDF filename
 - [ ] Tag the Sources file with concepts from the [§3.5](#35-tagging) registry — **not** automatically the folder name; leave tagging to the vault owner when unsure
 - [ ] Add `[[YYYY Author]]` citations in relevant topic Notes

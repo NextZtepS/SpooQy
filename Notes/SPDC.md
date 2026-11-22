@@ -39,6 +39,7 @@ In general, SPDC photons distinguishable when using for interference with other 
 There are methods to go about this [[2026 Barcons Planas]]:
 - Spatial/Spectral filter - trade off with brightness
 - Engineering - use waveguide to confine the spatial mode, group velocity matching, counter/back propagating signal and idler, crystal domain engineer
+  - e.g. a thin-film lithium niobate waveguide that achieves group velocity matching with higher-order TE modes, keeping all fields in the same polarization (no type-II polarization handling needed), together with Gaussian-apodized poling. This gives heralded purities up to 94% (JSI) and 89% (unheralded $g^{(2)}$) without filtering [[2026 Wang Zhou et al.]] [[2026 - Wang et al. - On-Chip Generation of Copolarized and Spectrally Separable Photon Pairs.pdf#page=1|p.1]].
 - [[Optical Cavities]] - use resonant frequency mode of the cavity to enhance certain spatial/spectral modes.
 
 ---

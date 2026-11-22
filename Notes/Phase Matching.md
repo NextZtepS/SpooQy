@@ -7,6 +7,8 @@ If the all the $\vec{k}$'s are pointing in the same direction, it is said to be 
 
 Phase matching conditions can be engineered to produce the photon pairs at desired wavelengths over a large range [[2019 Paudel et al.]] [[2019 - Paudel et al. - Direct excitation of a single quantum dot with cavity-SPDC photons.pdf#page=2&selection=10,63,31,92&color=important|p.2]]
 
+The phase matching dictates the spectral bandwidth of the photons generated from the [[SPDC]] process and its contribution is explained via [[Phase Matching Function]]. The resulting bandwidth is then a combined contribution of such [[Phase Matching Function]] and [[Pump Envelope Function]].
+
 There are 3 types of phase matching techniques possible:
 
 ## Critial Phase Matching ([[CPM]])

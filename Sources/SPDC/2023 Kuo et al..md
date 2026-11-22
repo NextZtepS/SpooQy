@@ -14,6 +14,7 @@ tags:
   - PhotonSource
   - QPM
   - Pulsed
+  - Bandwidth
 ---
 [[2023 - Kuo et al. - Photon-pair production and frequency translation using backward-wave spontaneous parametric downconversion.pdf|Photon-pair production and frequency translation using backward-wave spontaneous parametric downconversion]]
 
